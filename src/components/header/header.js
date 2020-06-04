@@ -75,14 +75,7 @@ export default function SearchAppBar() {
       <AppBar position="static">
         <Toolbar>
           
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div className="menu">
-            <a href="/#">Menu</a>
-            <a href="/#">Services</a>
-            <a href="/#">Terms</a>
-            <a href="/#">Contact</a>
-        </div>
+        
           <Typography className={classes.title} variant="h6" noWrap>
             Music Ipsum
           </Typography>
