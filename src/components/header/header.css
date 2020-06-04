@@ -1,11 +1,10 @@
 .Header {
     position: flex;
     /* top: 0; Stick it to the top  */
-    margin-top: 70px;
+   
     max-height: 70px;
     min-height: 60px;
-    width: 100%;
-    margin-bottom: 1%;
+    width: 30%;
   
     display: grid;
     grid-template-areas: "nav logo"; /* se quitó el área del loco, antes era 'logo nav' */
@@ -14,14 +13,10 @@
     background-color: #282c34;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 3;
-    font-family: Porpora;
+    
   }
   
- /*  .Logo {
-    grid-area: logo;
-    height: 70px;
-    
-  }  */
+ 
   
   .Nav {
     display: grid;
@@ -39,7 +34,7 @@
     transition: 0.5s;
     text-decoration: none;
     text-transform: none;
-    font-family: Porpora;
+    font-family: Oxygen;
     
     
   }
@@ -70,7 +65,7 @@
     margin-top: 2%;
     justify-self: end;
     margin-right: 7%; 
-    font-family: Porpora;  
+    font-family: Oxygen;  
     padding-right: 70px; 
   }
   
