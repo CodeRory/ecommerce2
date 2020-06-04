@@ -18,10 +18,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
+  
+  title: {      
     flexGrow: 1,
     display: 'none',
     [theme.breakpoints.up('sm')]: {
@@ -100,9 +98,9 @@ export default function SearchAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-        <header className="Header">
+      <AppBar position="static" >
+        <Toolbar >
+        <header className="Header" >
       
       <CSSTransition
         in={!isSmallScreen || isNavVisible}
@@ -111,10 +109,10 @@ export default function SearchAppBar() {
         unmountOnExit
       >
         <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
-          <p>hola</p>
-          <p>hola</p>
-          <p>hola</p>
-          <p>hola</p>
+          <p>Menu</p>
+          <p>Services</p>
+          <p>Terms</p>
+          <p>Contact</p>
         </nav>
       </CSSTransition>
       <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
@@ -130,6 +128,7 @@ export default function SearchAppBar() {
               <SearchIcon />
             </div>
             <InputBase
+              style={{fontFamily: 'Oxygen'}}
               placeholder="Search…"
               classes={{
                 root: classes.inputRoot,
