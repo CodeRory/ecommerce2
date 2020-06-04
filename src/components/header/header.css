@@ -1,0 +1,73 @@
+
+/* ---------------MenuResponsive------------------------------ */
+
+.menu {
+    margin: 0 0 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 60px;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 0 0 0;
+    font-size: 26px;
+    line-height: 60px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    label {
+        display: flex;
+        flex-direction: column;        
+        cursor: pointer;
+        color: whitesmoke;
+        margin-left: 2%;
+        
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        background-color: #303030;
+        z-index: 4;
+        padding-right: 0;
+        padding-left: 0;
+        border: solid;
+        
+       
+     
+    }
+    #toggle:checked + .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 325px 0 0 -20%;
+        padding: 0 2px 0 -16px;
+        
+        
+       
+    }
+    
+    
+}
+

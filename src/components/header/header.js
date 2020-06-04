@@ -8,6 +8,10 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
+import '../header/header.css';
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -70,16 +74,17 @@ export default function SearchAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
+          
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div className="menu">
+            <a href="/#">Menu</a>
+            <a href="/#">Services</a>
+            <a href="/#">Terms</a>
+            <a href="/#">Contact</a>
+        </div>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            Music Ipsum
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
