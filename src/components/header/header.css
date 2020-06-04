@@ -34,7 +34,7 @@
     transition: 0.5s;
     text-decoration: none;
     text-transform: none;
-    font-family: Oxygen;
+    font-family: palaquin;
     
     
   }
@@ -65,7 +65,7 @@
     margin-top: 2%;
     justify-self: end;
     margin-right: 7%; 
-    font-family: Oxygen;  
+    font-family: palaquin;  
     padding-right: 70px; 
   }
   

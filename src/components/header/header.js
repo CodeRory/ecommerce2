@@ -110,7 +110,7 @@ export default function SearchAppBar() {
         classNames="NavAnimation"
         unmountOnExit
       >
-        <nav className="Nav">
+        <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
           <p>hola</p>
           <p>hola</p>
           <p>hola</p>
@@ -122,7 +122,7 @@ export default function SearchAppBar() {
       </button>
     </header>
         
-          <Typography className={classes.title} variant="h6" noWrap>
+          <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen'}}>
             Music Ipsum
           </Typography>
           <div className={classes.search}>

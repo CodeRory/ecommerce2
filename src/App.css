@@ -2,3 +2,9 @@
     font-family: 'Oxygen';
     src: local('Oxygen'), url(./fonts/Oxygen-Regular.ttf) format('truetype');
   }
+
+
+  @font-face {
+    font-family: 'palaquin';
+    src: local('palaquin'), url(./fonts/palanquin-regular.ttf) format('truetype');
+  }
