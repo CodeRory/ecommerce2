@@ -1,97 +1,166 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
-
-
-
-import slider1 from '../slider/slider1.png';
-import slider2 from '../slider/slider2.png';
-import slider3 from '../slider/slider3.png';
-import slider4 from '../slider/slider4.png';
+import React from 'react';
 
 
 import '../slider/slider.css';
 
-const items = [
-  {
-    src: slider1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
-  },
-  {
-    src: slider2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
-  },
-  {
-    src: slider3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
-  },
-  {
-    src: slider4,
-    altText: 'Slide 4',
-    caption: 'Slide 4'
+class Slider extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      images: [
+        "http://1.fwcdn.pl/ph/15/15/371515/338322.1.jpg",
+        "http://1.fwcdn.pl/ph/15/15/371515/334849.1.jpg",
+        "http://1.fwcdn.pl/ph/15/15/371515/334851_2.1.jpg",
+        "http://1.fwcdn.pl/ph/15/15/371515/334842.1.jpg",
+        "http://1.fwcdn.pl/ph/15/15/371515/334848.1.jpg"
+      ]
+    };
   }
 
-];
-
-const Slider = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
+  render() {
     return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-        
-      >
-        <img src={item.src} alt={item.altText} id='eachSlide' />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
+      <div className="main-container">
+        <Carousel animationTime={500} slideInterval={10000}>
+          {this.state.images.map((item, index) => {
+            return <img src={item} key={index} />;
+          })}
+        </Carousel>
+      </div>
     );
-  });
+  }
+}
+
+class Carousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeIndex: 1,
+      transitionDuration: props.animationTime
+    };
+    this.elements = this.createClones(props.children);
+    this.timeoutObject = null;
+  }
+
+  createClones(children) {
+    const length = children.length;
+    const last = Object.assign({}, children[length - 1]);
+    const first = Object.assign({}, children[0]);
+
+    return [last, ...children, first];
+  }
+
+  componentDidMount() {
+    this.startSlideInterval();
+  }
+
+  startSlideInterval() {
+    if (this.props.slideInterval) {
+      this.timeoutObject = setTimeout(this.next, this.props.slideInterval);
+    }
+  }
+
+  clearSlideInterval() {
+    if (this.timeoutObject) {
+      clearTimeout(this.timeoutObject);
+    }
+  }
+
+  handleTransitionEnd = () => {
+    const length = this.elements.length;
+    const activeIndex = this.state.activeIndex;
+
+    if (activeIndex === 0) {
+      this.setState({ transitionDuration: 0, activeIndex: length - 2 });
+    } else if (activeIndex === length - 1) {
+      this.setState({ transitionDuration: 0, activeIndex: 1 });
+    }
+
+    this.clearSlideInterval();
+    this.startSlideInterval();
+  };
+
+  setActiveIndex = newIndex => {
+    if (newIndex >= 0 && newIndex <= this.elements.length - 1) {
+      this.setState({
+        transitionDuration: this.props.animationTime,
+        activeIndex: newIndex
+      });
+    }
+  };
+
+  next = () => {
+    this.setActiveIndex(this.state.activeIndex + 1);
+  };
+
+  previous = () => {
+    this.setActiveIndex(this.state.activeIndex - 1);
+  };
+
+  render() {
+    const { activeIndex, transitionDuration } = this.state;
+    const elements = this.elements;
+    const translation = -100 * activeIndex / elements.length;
+
+    const style = {
+      transform: "translateX(" + translation.toString() + "%)",
+      transitionDuration: transitionDuration / 1000 + "s",
+      width: elements.length * 100 + "%"
+    };
+
+    return (
+      <div className="carousel-container">
+        <div
+          className="carousel-items"
+          style={style}
+          onTransitionEnd={this.handleTransitionEnd}
+        >
+          {React.Children.map(elements, (element, index) => {
+            return (
+              <div className="carousel-item" key={index}>
+                {element}
+              </div>
+            );
+          })}
+        </div>
+        <div className="indicators">
+          {this.props.children.map((child, index) => {
+            let indicatorClass = "indicators-item";
+
+            if (index + 1 === activeIndex) {
+              indicatorClass += " active";
+            }
+
+            return (
+              <div
+                className={indicatorClass}
+                key={index + 1}
+                onClick={() => this.setActiveIndex(index + 1)}
+              />
+            );
+          })}
+        </div>
+        <Arrow onArrowClick={this.previous} direction="left" />
+        <Arrow onArrowClick={this.next} direction="right" />
+      </div>
+    );
+  }
+}
+
+Carousel.defaultProps = {
+  animationTime: 600
+};
+
+//Arrow component
+const Arrow = props => {
+  const containerClass = "arrow " + props.direction;
+  const iconClass = "fas fa-chevron-" + props.direction;
 
   return (
-    <div id='allSlider'>
-      <Carousel
-        activeIndex={activeIndex}
-        next={next}
-        previous={previous}
-        id='allSlider'
-        
-      >
-        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}  />
-        {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}  />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-      </Carousel>    
+    <div onClick={props.onArrowClick} className={containerClass}>
+      <i className={iconClass} />
     </div>
   );
-}
+};
+
 
 export default Slider;
