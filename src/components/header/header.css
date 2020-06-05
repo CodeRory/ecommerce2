@@ -38,10 +38,9 @@
 
 
   
-  .Burger {
+  .Menu {
     display: none;
-    grid-area: burger;
-    margin: 0 0 0 0;
+    grid-area: Menu;
     padding: 0;
     justify-self: end;
     font-size: 40px;
@@ -50,7 +49,7 @@
     outline: none;
     transition: 0.1s;
   }
-  .Burger:active {
+  .Menu:active {
     transform: scale(1.2);
   }
   
@@ -83,20 +82,39 @@
 
 @media (max-width: 700px) {
   .leftHeader {
-    grid-template-areas: "logo burger" "nav nav";
+    grid-template-areas: "logo Menu" "nav nav";
   }
   .Nav {
     grid-template-rows: repeat(4, auto);
     grid-template-columns: none;
     grid-row-gap: 20px;  
-    padding: 30px 0 30px;
+    padding: 10px 0 30px;
     background: rgba(40, 44, 47, 0.95);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin-top: 39px;
   }
-  .Burger {
-    display: inline;
+    
+  #navSections {
+    color: gray;
+    transition: 0.5s;
+    text-decoration: none;
+    text-transform: none;
+    margin-left: 5px;
+    border: solid;
+      
+      
+  }
+
+  
+  .Menu {
+    display: flex;
+    height: 30px;
+    padding-top: 23px;
+    padding-right: 26px;
+    
+    
   }
   #searchRight {
     display: none; 
@@ -108,8 +126,6 @@
     display: flex;
     width: 100%;
   }
-
-
 
 
 }
