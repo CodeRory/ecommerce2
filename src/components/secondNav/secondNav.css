@@ -45,7 +45,7 @@ nav ul {
     background: #0d2035;
     color: #fff;
     text-align: left;
-    z-index: 3;
+    z-index: 1;
     height: 50px;
 }
 .nav a {

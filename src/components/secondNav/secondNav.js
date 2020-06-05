@@ -5,7 +5,7 @@ import '../secondNav/secondNav.css';
 
 
 
-class secondNav extends React.Component {  
+class SecondNav extends React.Component {  
   render() {
     return (
       <div className='secondNav'>
@@ -192,7 +192,7 @@ class SubmenuSoftware extends React.Component {
 
 
 
-export default secondNav;
+export default SecondNav;
 
 
 
