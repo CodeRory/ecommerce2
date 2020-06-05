@@ -99,10 +99,9 @@ export default function SearchAppBar() {
 
   return (
     <div className={classes.root} >
-      <AppBar position="static" style={{backgroundColor: '#303030', 
-      border: 'solid'}}>
-        <Toolbar >
-          <div className="leftHeader" style={{border: 'solid'}} >      
+      <AppBar position="static" style={{backgroundColor: '#303030'}}>
+        <Toolbar style={{border: 'solid', borderColor: 'pink'}}>
+          <div className="leftHeader" style={{border: 'solid', borderColor: 'green'}} >      
             <CSSTransition
               in={!isSmallScreen || isNavVisible}
               timeout={350}

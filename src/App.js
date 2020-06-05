@@ -5,9 +5,11 @@ import SearchAppBar from './components/header/header';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <SearchAppBar />
-      </header>
+      <div className='allComponents'>
+        <header className="App-header">
+          <SearchAppBar />
+        </header>
+      </div>
     </div>
   );
 }
