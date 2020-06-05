@@ -1,5 +1,9 @@
 import React from 'react';
 
+import slider1 from '../slider/slider1.png';
+import slider2 from '../slider/slider2.png';
+import slider3 from '../slider/slider3.png';
+import slider4 from '../slider/slider4.png';
 
 import '../slider/slider.css';
 
@@ -8,11 +12,10 @@ class Slider extends React.Component {
     super();
     this.state = {
       images: [
-        "http://1.fwcdn.pl/ph/15/15/371515/338322.1.jpg",
-        "http://1.fwcdn.pl/ph/15/15/371515/334849.1.jpg",
-        "http://1.fwcdn.pl/ph/15/15/371515/334851_2.1.jpg",
-        "http://1.fwcdn.pl/ph/15/15/371515/334842.1.jpg",
-        "http://1.fwcdn.pl/ph/15/15/371515/334848.1.jpg"
+        slider1,
+        slider2,
+        slider3,
+        slider4
       ]
     };
   }
