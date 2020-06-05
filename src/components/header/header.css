@@ -98,7 +98,7 @@
   .Nav {
     display: flex; 
     flex-direction: column;
-    background: rgba(40, 44, 47, 0.95);
+    background: #303030;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
