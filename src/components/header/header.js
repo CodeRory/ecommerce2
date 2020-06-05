@@ -121,8 +121,8 @@ export default function SearchAppBar() {
                 <p id='navSections'>Contact</p>
               </nav>
             </CSSTransition>
-            <button onClick={toggleNav} className="Menu" style={{color: 'white'}} >
-              <MenuSharpIcon />
+            <button onClick={toggleNav} className="Menu"  >
+              <MenuSharpIcon id='menuIcon' />
             </button>
           </div>
         
