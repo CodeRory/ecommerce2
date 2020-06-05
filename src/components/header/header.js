@@ -130,7 +130,7 @@ export default function SearchAppBar() {
             Music Ipsum
           </Typography>
 
-          <div className={classes.search}  >
+          <div className={classes.search} id='searchRight'  >
             <div className={classes.searchIcon} >
               <SearchIcon style={{fontFamily: 'Oxygen'}} />
             </div>
@@ -145,7 +145,25 @@ export default function SearchAppBar() {
               inputProps={{ 'aria-label': 'search'}}
               />
             </div>
+            
+          
         </Toolbar>
+
+        <div className={classes.search} id='searchRight2'  >
+            <div className={classes.searchIcon} >
+              <SearchIcon style={{fontFamily: 'Oxygen'}} />
+            </div>
+            <InputBase
+              id='inputSearch'
+              style={{fontFamily: 'Oxygen'}}
+              placeholder="Search"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput,
+              }}
+              inputProps={{ 'aria-label': 'search'}}
+              />
+          </div>
       </AppBar>
     </div>
   );
