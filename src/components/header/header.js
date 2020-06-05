@@ -98,34 +98,34 @@ export default function SearchAppBar() {
 
   return (
     <div className={classes.root} >
-      <AppBar position="static" style={{backgroundColor: '#282c34'}}>
+      <AppBar position="static" style={{backgroundColor: '#303030'}}>
         <Toolbar >
-        <div className="leftHeader" >
-      
-          <CSSTransition
-            in={!isSmallScreen || isNavVisible}
-            timeout={350}
-            classNames="NavAnimation"
-            unmountOnExit
-          >
-            <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
-              <p>Menu</p>
-              <p>Services</p>
-              <p>Terms</p>
-              <p>Contact</p>
-            </nav>
-          </CSSTransition>
-          <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
-            📕
-          </button>
-        </div>
+          <div className="leftHeader" >      
+            <CSSTransition
+              in={!isSmallScreen || isNavVisible}
+              timeout={350}
+              classNames="NavAnimation"
+              unmountOnExit
+            >
+              <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
+                <p>Menu</p>
+                <p>Services</p>
+                <p>Terms</p>
+                <p>Contact</p>
+              </nav>
+            </CSSTransition>
+            <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
+              📕
+            </button>
+          </div>
         
           <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen'}}>
             Music Ipsum
           </Typography>
+
           <div className={classes.search}>
             <div className={classes.searchIcon}>
-              <SearchIcon />
+              <SearchIcon style={{fontFamily: 'Oxygen'}} />
             </div>
             <InputBase
               style={{fontFamily: 'Oxygen'}}
@@ -135,8 +135,8 @@ export default function SearchAppBar() {
                 input: classes.inputInput,
               }}
               inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+              />
+            </div>
         </Toolbar>
       </AppBar>
     </div>

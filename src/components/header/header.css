@@ -4,7 +4,7 @@
     width: 30%;  
     display: grid;
     grid-template-areas: "nav logo"; /* se quitó el área del logo, antes era 'logo nav' */    
-    background-color: #282c34;
+    background-color: #303030;
     z-index: 3;
     
   }
@@ -19,7 +19,7 @@
   }
 
   #navSections {
-    color: #fff;
+    color: gray;
     font-size: 20px;
     font-weight: 500;
     transition: 0.5s;
@@ -54,7 +54,7 @@
   }
   
   @media (max-width: 700px) {
-    .Header {
+    .leftHeader {
       grid-template-areas: "logo burger" "nav nav";
     }
     .Nav {
