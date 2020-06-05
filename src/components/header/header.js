@@ -8,6 +8,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import InputAdornment from "@material-ui/core/InputAdornment";
 
 import '../header/header.css';
 
@@ -141,6 +142,7 @@ export default function SearchAppBar() {
               id='inputSearch'
               style={{fontFamily: 'Oxygen'}}
               placeholder="Search"
+              type='search'
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
@@ -160,11 +162,15 @@ export default function SearchAppBar() {
               id='inputSearch'
               style={{fontFamily: 'Oxygen'}}
               placeholder="Search"
+              type='search'
+              color='white'
+              fill='white'
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
-              inputProps={{ 'aria-label': 'search'}}
+              inputProps={{ color: 'white'
+               }}
               />
           </div>
       </AppBar>
