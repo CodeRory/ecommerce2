@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     /* display: 'none', */
     width: '200px',
     overflow: 'hidden',
-    textOverflow: 'ellipsis',
+    textOverflow: 'clip',
     /* [theme.breakpoints.up('sm')]: {
       display: 'block',
     }, */
