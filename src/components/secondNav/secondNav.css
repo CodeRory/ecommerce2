@@ -1,10 +1,10 @@
 .secondNav {
     display: flex;
     justify-content: row;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    background-color: tomato;
     font-family: Oxygen;
+    background-color: rgba(245, 245, 245, 0.877);
     
     
 }
@@ -40,9 +40,9 @@ nav ul {
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;    
     margin: 0 auto 0;
-    background: #0d2035;
+    background: #424242;
     color: #fff;
     text-align: left;
     z-index: 1;
@@ -61,10 +61,11 @@ nav ul {
 }
 .nav__menu-item {
     display: inline-block;
-    position: relative;
+    overflow: clip;
+    /* position: relative; */
 }
 .nav__menu-item:hover {
-    background-color: #00aeef;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 .nav__menu-item:hover .nav__submenu {
     display: block;
@@ -75,7 +76,7 @@ nav ul {
     display: none;
     position: absolute;
     width: 180px;
-    background-color: #00aeef;
+    background-color: #424242;
 }
 .nav__submenu-item:hover {
     background: rgba(0, 0, 0, 0.1);
