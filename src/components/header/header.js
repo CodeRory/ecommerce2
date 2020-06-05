@@ -23,12 +23,15 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontWeight: 'bolder',
     /* display: 'none', */
-    width: '40px',
+    width: '200px',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
     /* [theme.breakpoints.up('sm')]: {
       display: 'block',
     }, */
   },
   search: {
+    
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
@@ -38,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
     width: '20%',
     [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(1),
+      marginLeft: theme.spacing(0),
       width: 'auto',
     },
   },
@@ -53,13 +56,15 @@ const useStyles = makeStyles((theme) => ({
   },
   inputRoot: {
     color: 'inherit',
+    
   },
   inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
+    padding: theme.spacing(1, 0, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create('width'),
     width: '100%',
+    
     [theme.breakpoints.up('sm')]: {
       width: '12ch',
       '&:focus': {
@@ -125,18 +130,19 @@ export default function SearchAppBar() {
             Music Ipsum
           </Typography>
 
-          <div className={classes.search} >
-            <div className={classes.searchIcon}>
+          <div className={classes.search}  >
+            <div className={classes.searchIcon} >
               <SearchIcon style={{fontFamily: 'Oxygen'}} />
             </div>
             <InputBase
+              id='inputSearch'
               style={{fontFamily: 'Oxygen'}}
               placeholder="Search"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
               }}
-              inputProps={{ 'aria-label': 'search' }}
+              inputProps={{ 'aria-label': 'search'}}
               />
             </div>
         </Toolbar>
