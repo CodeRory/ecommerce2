@@ -100,19 +100,19 @@ export default function SearchAppBar() {
   return (
     <div className={classes.root} >
       <AppBar position="static" style={{backgroundColor: '#303030'}}>
-        <Toolbar style={{border: 'solid', borderColor: 'pink'}}>
-          <div className="leftHeader" style={{border: 'solid', borderColor: 'green'}} >      
+        <Toolbar >
+          <div className="leftHeader"  >      
             <CSSTransition
               in={!isSmallScreen || isNavVisible}
               timeout={350}
               classNames="NavAnimation"
               unmountOnExit
             >
-              <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
-                <p>Menu</p>
-                <p>Services</p>
-                <p>Terms</p>
-                <p>Contact</p>
+              <nav className="Nav" style={{fontFamily: 'Oxygen', fontSize:'0.9em'}}>
+                <p id='navSections'>Menu</p>
+                <p id='navSections'>Services</p>
+                <p id='navSections'>Terms</p>
+                <p id='navSections'>Contact</p>
               </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
@@ -120,11 +120,11 @@ export default function SearchAppBar() {
             </button>
           </div>
         
-          <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen', border: 'solid'}}>
+          <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen'}}>
             Music Ipsum
           </Typography>
 
-          <div className={classes.search} style={{border: 'solid'}}>
+          <div className={classes.search} >
             <div className={classes.searchIcon}>
               <SearchIcon style={{fontFamily: 'Oxygen'}} />
             </div>

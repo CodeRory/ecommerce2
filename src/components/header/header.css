@@ -1,11 +1,13 @@
 .leftHeader {
     position: flex;   
     height: 70px;
-    width: 30%;  
+    width: 25%;  
     display: grid;
     grid-template-areas: "nav logo"; /* se quitó el área del logo, antes era 'logo nav' */    
     background-color: #303030;
     z-index: 3;
+    margin-left: -1.8%;
+    margin-right: 18%;
     
   }
    
@@ -20,18 +22,16 @@
 
   #navSections {
     color: gray;
-    font-size: 20px;
-    font-weight: 500;
     transition: 0.5s;
     text-decoration: none;
     text-transform: none;
-    font-family: palaquin;
     
     
   }
   #navSections:hover {
-    transform: translateY(3px);
+    transform: scale(1.1);
     transition: 0.2s;
+    color: white;
     
   }
 
@@ -40,7 +40,7 @@
   .Burger {
     display: none;
     grid-area: burger;
-    margin: 0 20px 0 0;
+    margin: 0 0 0 0;
     padding: 0;
     justify-self: end;
     font-size: 40px;
