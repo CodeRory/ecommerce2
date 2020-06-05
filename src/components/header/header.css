@@ -1,22 +1,14 @@
-.Header {
-    position: flex;
-    /* top: 0; Stick it to the top  */
-   
-    max-height: 70px;
-    min-height: 60px;
-    width: 30%;
-  
+.leftHeader {
+    position: flex;   
+    height: 70px;
+    width: 30%;  
     display: grid;
-    grid-template-areas: "nav logo"; /* se quitó el área del loco, antes era 'logo nav' */
-  
-    /* Cosmetics */
+    grid-template-areas: "nav logo"; /* se quitó el área del logo, antes era 'logo nav' */    
     background-color: #282c34;
     z-index: 3;
     
   }
-  
- 
-  
+   
   .Nav {
     display: grid;
     grid-area: nav;
@@ -44,37 +36,6 @@
   }
 
 
-
-  #myButton {
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-    background-color: rgba(255, 0, 0, 0.5);
-    box-shadow: 1px 1px 15px 0px #000000;
-   -webkit-box-shadow: 1px 1px 150px 0px #000000;
-   -moz-box-shadow: 1px 1px 15px 0px #000000;
-   text-shadow: 1px 1px 15px #000000;
-    cursor: pointer;
-    transition: 70ms;
-    width: 70px;
-    height: 40px;
-    margin-top: 2%;
-    justify-self: end;
-    margin-right: 7%; 
-    font-family: palaquin;  
-    padding-right: 70px; 
-  }
-  
-  #myButton:active {
-    transform: translateX(10px);
-    box-shadow: 1px 1px 15px 0px #000000;
-   -webkit-box-shadow: 1px 1px 150px 0px #000000;
-   -moz-box-shadow: 1px 1px 15px 0px #000000;
-   text-shadow: 1px 1px 15px #000000;
-  }
   
   .Burger {
     display: none;
@@ -110,23 +71,6 @@
     .Burger {
       display: inline;
     }
-    #myButton {
-      outline: none;
-      border: none;
-      font-size: 20px;
-      color: #fff;
-      font-weight: 600;
-      background-color: rgba(255, 0, 0, 0.5);
-     
-      border-radius: 50px;
-      cursor: pointer;
-      transition: 70ms;
-      width: 70px;
-      height: 40px;
-      margin-top: 4%;
-      justify-self: start;
-      margin-left: 5%;    
-    }
   }
   
   .NavAnimation-enter {
@@ -147,9 +91,3 @@
     transition: opacity 350ms, transform 350ms;
   }
 
-
-#textLogInFirst {
-  border: 'none';
-  color: 'white';
-  text-emphasis: none;
-}

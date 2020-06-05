@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AppBar from '@material-ui/core/AppBar';
+import { CSSTransition } from 'react-transition-group';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
@@ -7,8 +8,6 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 
 import '../header/header.css';
-
-import { CSSTransition } from 'react-transition-group';
 
 
 
@@ -21,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
   
   title: {      
     flexGrow: 1,
+    fontWeight: 'bolder',
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
@@ -97,28 +97,28 @@ export default function SearchAppBar() {
   
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" >
+    <div className={classes.root} >
+      <AppBar position="static" style={{backgroundColor: '#282c34'}}>
         <Toolbar >
-        <header className="Header" >
+        <div className="leftHeader" >
       
-      <CSSTransition
-        in={!isSmallScreen || isNavVisible}
-        timeout={350}
-        classNames="NavAnimation"
-        unmountOnExit
-      >
-        <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
-          <p>Menu</p>
-          <p>Services</p>
-          <p>Terms</p>
-          <p>Contact</p>
-        </nav>
-      </CSSTransition>
-      <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
-        📕
-      </button>
-    </header>
+          <CSSTransition
+            in={!isSmallScreen || isNavVisible}
+            timeout={350}
+            classNames="NavAnimation"
+            unmountOnExit
+          >
+            <nav className="Nav" style={{fontFamily: 'Oxygen'}}>
+              <p>Menu</p>
+              <p>Services</p>
+              <p>Terms</p>
+              <p>Contact</p>
+            </nav>
+          </CSSTransition>
+          <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
+            📕
+          </button>
+        </div>
         
           <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen'}}>
             Music Ipsum
@@ -129,7 +129,7 @@ export default function SearchAppBar() {
             </div>
             <InputBase
               style={{fontFamily: 'Oxygen'}}
-              placeholder="Search…"
+              placeholder="Search"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
