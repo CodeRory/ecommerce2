@@ -102,9 +102,10 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
-    margin-top: 15px;
+    margin-top: 25px;
     width: 130px;
     z-index: 5;
+    margin-left: -11%;
   }
     
   #navSections {
@@ -114,6 +115,7 @@
     text-transform: none;
     margin-top: 20px;
     padding-bottom: 10px;
+    
       
       
   }
@@ -124,8 +126,6 @@
     color: whitesmoke;
     width: 50px;
     height: 70px;
-    
-    border: solid;
   }
   #menuIcon {
 
