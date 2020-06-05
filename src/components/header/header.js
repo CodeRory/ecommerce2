@@ -7,6 +7,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 
 import '../header/header.css';
 
@@ -119,6 +120,8 @@ export default function SearchAppBar() {
                 <p id='navSections'>Services</p>
                 <p id='navSections'>Terms</p>
                 <p id='navSections'>Contact</p>
+                <p id='navSectionsClose' onClick={toggleNav}><ExpandLessIcon /></p>
+                
               </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Menu"  >

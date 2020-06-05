@@ -81,16 +81,19 @@
   display: none;
 }
 
+#navSectionsClose {
+  display: none;
+}
 
 @media (max-width: 700px) {
   .leftHeader {
-    grid-template-areas: "logo Menu" "nav nav";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .Nav {
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: none;
-    grid-row-gap: 20px;  
-    padding: 10px 10px 30px;
+    display: flex; 
+    flex-direction: column;
     background: rgba(40, 44, 47, 0.95);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius:20px;
@@ -98,11 +101,12 @@
   }
     
   #navSections {
-    float: left;
+    display: flex;
     transition: 0.5s;
     text-decoration: none;
     text-transform: none;
-    margin-left: 5px;
+    margin-top: 20px;
+    padding-bottom: 10px;
       
       
   }
@@ -110,11 +114,9 @@
   
   .Menu {
     display: block;
-    height: 30px;
     color: whitesmoke;
     width: 120px;
     height: 70px;
-    margin-left: -30px;
   }
   #menuIcon {
 
@@ -135,4 +137,8 @@
   }
 
 
+
+  #navSectionsClose {
+    display: flex;
+  }
 }
