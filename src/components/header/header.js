@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 
 import '../header/header.css';
 
@@ -15,17 +16,17 @@ import '../header/header.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    /* flexGrow: 1, */
   },
   
   title: {      
     flexGrow: 1,
     fontWeight: 'bolder',
-    display: 'none',
+    /* display: 'none', */
     width: '40px',
-    [theme.breakpoints.up('sm')]: {
+    /* [theme.breakpoints.up('sm')]: {
       display: 'block',
-    },
+    }, */
   },
   search: {
     position: 'relative',
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: fade(theme.palette.common.white, 0.25),
     },
     marginLeft: 0,
-    width: '100%',
+    width: '20%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(1),
       width: 'auto',
@@ -116,7 +117,7 @@ export default function SearchAppBar() {
               </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger" style={{color: 'white'}}>
-              📕
+              <MenuSharpIcon />
             </button>
           </div>
         
