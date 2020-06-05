@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import SearchAppBar from './components/header/header';
+import SecondNav from './components/secondNav/secondNav';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <header className="App-header">
           <SearchAppBar />
         </header>
+        <div>
+          <SecondNav />
+        </div>
       </div>
     </div>
   );
