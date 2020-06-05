@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SearchAppBar from './components/header/header';
 import SecondNav from './components/secondNav/secondNav';
+import Slider from './components/slider/slider';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         </header>
         <div>
           <SecondNav />
+        </div>
+        <div>
+          <Slider />
         </div>
       </div>
     </div>
