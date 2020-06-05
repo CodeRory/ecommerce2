@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontWeight: 'bolder',
     display: 'none',
+    width: '40px',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
@@ -98,9 +99,10 @@ export default function SearchAppBar() {
 
   return (
     <div className={classes.root} >
-      <AppBar position="static" style={{backgroundColor: '#303030'}}>
+      <AppBar position="static" style={{backgroundColor: '#303030', 
+      border: 'solid'}}>
         <Toolbar >
-          <div className="leftHeader" >      
+          <div className="leftHeader" style={{border: 'solid'}} >      
             <CSSTransition
               in={!isSmallScreen || isNavVisible}
               timeout={350}
@@ -119,11 +121,11 @@ export default function SearchAppBar() {
             </button>
           </div>
         
-          <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen'}}>
+          <Typography className={classes.title} variant="h6" noWrap style={{fontFamily: 'Oxygen', border: 'solid'}}>
             Music Ipsum
           </Typography>
 
-          <div className={classes.search}>
+          <div className={classes.search} style={{border: 'solid'}}>
             <div className={classes.searchIcon}>
               <SearchIcon style={{fontFamily: 'Oxygen'}} />
             </div>
