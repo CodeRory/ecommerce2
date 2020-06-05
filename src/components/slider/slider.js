@@ -5,6 +5,8 @@ import slider2 from '../slider/slider2.png';
 import slider3 from '../slider/slider3.png';
 import slider4 from '../slider/slider4.png';
 
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+
 import '../slider/slider.css';
 
 class Slider extends React.Component {
@@ -159,7 +161,7 @@ const Arrow = props => {
   const iconClass = "fas fa-chevron-" + props.direction;
 
   return (
-    <div onClick={props.onArrowClick} className={containerClass}>
+    <div onClick={props.onArrowClick} className={containerClass} >
       <i className={iconClass} />
     </div>
   );
