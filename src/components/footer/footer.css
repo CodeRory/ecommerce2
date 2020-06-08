@@ -1,0 +1,36 @@
+.footerContainer {
+    background-color:  #303030;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    
+}
+
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 2%;
+}
+
+
+.codeRory {
+    display: flex;
+    color: whitesmoke;
+    font-family: Oxygen;
+    font-weight: bold;
+}

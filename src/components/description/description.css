@@ -1,0 +1,39 @@
+.allDescriptionArea {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;   
+    align-items: center; 
+    width: 100%;
+    font-family: Oxygen;
+    margin-top: 5%;
+    
+}
+
+
+
+.twoDescription {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+    
+
+}
+
+.oneDescriptionOfTwo {
+    width: 37%;
+    
+}
+
+
+
+
+.oneVerticalDescription {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

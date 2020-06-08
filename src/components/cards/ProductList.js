@@ -11,7 +11,7 @@ export default class ProductList extends Component {
       <React.Fragment>
         <div >
           <div className="containerTitleAndCards" >
-            <Title name="Our products" />
+            <Title name="New offers" />
 
             <div className="allCardsSection"  >
               <ProductConsumer  >

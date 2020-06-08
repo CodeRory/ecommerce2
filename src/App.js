@@ -12,6 +12,10 @@ import Cart from './components/cards/cart/Cart';
 import Default from './components/cards/Default';
 import Modal from './components/cards/Modal';
 
+import Description from './components/description/description';
+
+import Footer from './components/footer/footer';
+
 
 
 function App() {
@@ -36,7 +40,10 @@ function App() {
           <Route component={Default} />
         </Switch>
         <Modal />
-         
+        <div>
+          <Description />
+        </div>
+          <Footer />
         </div>
       </div>
     </div>
