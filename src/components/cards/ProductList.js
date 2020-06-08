@@ -11,9 +11,9 @@ export default class ProductList extends Component {
       <React.Fragment>
         <div >
           <div className="containerTitleAndCards">
-            <Title name="Our" title="guitars" />
+            <Title name="Our products" />
 
-            <div className="allCardsSection" style={{border: 'solid', borderColor: 'blue'}} >
+            <div className="allCardsSection"  >
               <ProductConsumer >
                 {value => {
                   return value.products.map(product => {

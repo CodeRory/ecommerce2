@@ -28,6 +28,11 @@
     }
 }
 
+
+
+
+
+
 :root {
     --mainBlue: #2a2a72;
     --lightBlue: #009ffd;
@@ -37,15 +42,14 @@
   }
   
   body {
-    font-family: "Oswald", sans-serif !important;
+    
     background: var(--mainWhite) !important;
     color: var(--mainDark) !important;
   }
   
   .text-title {
-    font-family: "Marck Script", cursive;
+    font-family: Oxygen;
     letter-spacing: 0.3rem;
-    text-transform: uppercase;
   }
   
   .text-blue {

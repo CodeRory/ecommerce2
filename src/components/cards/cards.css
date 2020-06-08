@@ -1,15 +1,16 @@
 .containerTitleAndCards {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     width: 100%;
-    border: solid;
+    font-family: Oxygen;
 }
 
 
 
 .allCardsSection {
     display: flex;
+    flex-direction: row;
     width: 90%;
 }
 
