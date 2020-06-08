@@ -8,51 +8,69 @@ import '../secondNav/secondNav.css';
 class SecondNav extends React.Component {  
   render() {
     return (
-      <div className='secondNav'>
-        <nav className="nav">
-          <ul className="nav__menu">
-            <li className="nav__menu-item">
-              <a>Guitars</a>
-              <SubmenuGuitar />
-            </li>
-            
-            <li className="nav__menu-item">
-              <a>Bass</a>
-              <SubmenuBass />
-            </li>
-            <li className="nav__menu-item">
-              <a>Piano</a>
-              <SubmenuPiano />
-            </li>
+      <div className='bothSecondNav'>
+        <div className='secondNav'>
+          <nav className="nav">
+            <ul className="nav__menu">
+              <li className="nav__menu-item">
+                <a>Guitars</a>
+                <SubmenuGuitar />
+              </li>
+              
+              <li className="nav__menu-item">
+                <a>Bass</a>
+                <SubmenuBass />
+              </li>
+              <li className="nav__menu-item">
+                <a>Piano</a>
+                <SubmenuPiano />
+              </li>
 
-            <li className="nav__menu-item">
-              <a>Drums</a>
-              <SubmenuDrums />
-            </li>
-            <li className="nav__menu-item">
-              <a>DJ</a>
-            </li>
+              <li className="nav__menu-item">
+                <a>Drums</a>
+                <SubmenuDrums />
+              </li>
+              <li className="nav__menu-item">
+                <a>DJ</a>
+              </li>
 
-            <li className="nav__menu-item">
-              <a>Brass</a>
-              <SubmenuBrass />
-            </li>
-            <li className="nav__menu-item">
-              <a>Studio</a>
-            </li>
-            <li className="nav__menu-item">
-              <a>Software</a>
-              <SubmenuSoftware />
-            </li>
-            <li className="nav__menu-item">
-              <a>Accessories</a>
-            </li>
-            <li className="nav__menu-item">
-              <a>Cases</a>
-            </li>
-          </ul>
-        </nav>
-      </div>  
+              <li className="nav__menu-item">
+                <a>Brass</a>
+                <SubmenuBrass />
+              </li>
+              <li className="nav__menu-item">
+                <a>Studio</a>
+              </li>
+              <li className="nav__menu-item">
+                <a>Software</a>
+                <SubmenuSoftware />
+              </li>
+              <li className="nav__menu-item">
+                <a>Accessories</a>
+              </li>
+              <li className="nav__menu-item">
+                <a>Cases</a>
+              </li>
+            </ul>
+          </nav>
+        </div>  
+        <div className='secondNavLittle'>
+          <div>
+            <a href='/#'>Modern</a>
+          </div>
+          <div>
+            <a href='/#'>Classical</a>
+          </div>
+          <div>
+            <a href='/#'>Accessories</a>
+          </div>
+        
+        
+        
+        
+        
+        </div>
+      </div>
     )
   }
 }

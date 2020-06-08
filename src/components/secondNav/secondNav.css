@@ -81,3 +81,26 @@ nav ul {
 .nav__submenu-item:hover {
     background: rgba(0, 0, 0, 0.1);
 }
+
+.secondNavLittle {
+    display: none;
+
+}
+
+
+@media (max-width: 700px) {
+    .secondNav{
+        display: none;
+    }
+    
+    
+    .secondNavLittle {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; 
+      height: 70px;
+      
+    }
+    
+      
+}
