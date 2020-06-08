@@ -55,15 +55,20 @@ class SecondNav extends React.Component {
           </nav>
         </div>  
         <div className='secondNavLittle'>
-          <div>
-            <a href='/#'>Modern</a>
-          </div>
-          <div>
-            <a href='/#'>Classical</a>
-          </div>
-          <div>
-            <a href='/#'>Accessories</a>
-          </div>
+          <ul className='threeLittleSections'>
+            <li>
+              <a href='/#' >Modern</a>
+            </li>
+            <li>
+              <a href='/#'>Classical</a>
+            </li>
+            <li>
+              <a href='/#'>Studio</a>
+            </li>
+            <li>
+              <a href='/#'>Accessories</a>
+            </li>
+          </ul>
         
         
         
