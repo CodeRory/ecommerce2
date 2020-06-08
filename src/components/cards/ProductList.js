@@ -10,18 +10,20 @@ export default class ProductList extends Component {
     return (
       <React.Fragment>
         <div >
-          <div className="containerTitleAndCards">
+          <div className="containerTitleAndCards" >
             <Title name="Our products" />
 
             <div className="allCardsSection"  >
-              <ProductConsumer >
+              <ProductConsumer  >
                 {value => {
                   return value.products.map(product => {
-                    return <Product key={product.id} product={product} />;
+                    return <Product key={product.id} product={product}  />;
                   });
                 }}
               </ProductConsumer>
+              
             </div>
+            
           </div>
         </div>
       </React.Fragment>
