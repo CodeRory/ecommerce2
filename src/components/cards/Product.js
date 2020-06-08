@@ -5,6 +5,7 @@ import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
 
+
 import '../cards/cards.css';
 
 
@@ -14,14 +15,14 @@ export default class Product extends Component {
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3" id='eachCard' >
         <div className="card">
-          <ProductConsumer>
+          <ProductConsumer >
             {value => (
-              <div
+              <div 
                 className="img-container p-5"
                 onClick={() => value.handleDetail(id)}
               >
                 <Link to="/details">
-                  <img src={img} alt="product" className="card-img-top" />
+                  <img src={img} alt="product" className="card-img-top"  style={{height: '280px', width: '250px'}}/>
                 </Link>
                 <button
                   className="cart-btn"

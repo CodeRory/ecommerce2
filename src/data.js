@@ -3,11 +3,19 @@ https://www.iconfinder.com/icons/1243689/call_phone_icon
 Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/Makoto_msk */
 
+
+import tele from './components/cards/img/tele.png';
+import bass from './components/cards/img/bass.png';
+
+import piano from './components/cards/img/piano.png';
+import drums from './components/cards/img/drums.png';
+
+
 export const storeProducts = [
   {
     id: 1,
     title: "Google Pixel - Black",
-    img: "img/product-1.png",
+    img: tele,
     price: 10,
     company: "GOOGLE",
     info:
@@ -19,7 +27,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "Samsung S7",
-    img: "img/product-2.png",
+    img: bass,
     price: 16,
     company: "SAMSUNG",
     info:
@@ -31,7 +39,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "HTC 10 - Black",
-    img: "img/product-3.png",
+    img: piano,
     price: 8,
     company: "htc",
     info:
@@ -43,7 +51,7 @@ export const storeProducts = [
   {
     id: 4,
     title: "HTC 10 - White",
-    img: "img/product-4.png",
+    img: drums,
     price: 18,
     company: "htc",
     info:
