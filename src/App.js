@@ -17,6 +17,9 @@ function App() {
         <div>
           <Slider />
         </div>
+        <div>
+         
+        </div>
       </div>
     </div>
   );
