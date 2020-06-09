@@ -65,3 +65,22 @@
     width: 40%;
     text-align: center;
 }
+
+#myButton {
+    color: #303030;
+    text-transform: none;
+    border-color: gray;
+}
+
+#myButton:hover {
+    color: #303030;
+    text-transform: none;
+    background-color: gray;
+}
+
+/* ----itemAddedToShop------ */
+
+.container {
+    font-family: Oxygen;
+    text-align: center;
+}

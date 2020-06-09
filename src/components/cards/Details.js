@@ -35,7 +35,7 @@ export default class Details extends Component {
                 </div>
                 {/* product text */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                  <h2>Model: {title}</h2>
+                  
                   <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
                     Made by: <span className="text-uppercase">{company}</span>
                   </h4>
@@ -51,9 +51,10 @@ export default class Details extends Component {
                   {/* buttons */}
                   <div>
                     <Link to="/">
-                      <ButtonContainer>Back to offers</ButtonContainer>
+                      <ButtonContainer id='myButton'>Back to offers</ButtonContainer>
                     </Link>
                     <ButtonContainer
+                      id='myButton'
                       cart
                       disabled={inCart ? true : false}
                       onClick={() => {
@@ -61,7 +62,7 @@ export default class Details extends Component {
                         value.openModal(id);
                       }}
                     >
-                      {inCart ? "in Cart" : "add to cart"}
+                      {inCart ? "In cart" : "Add to cart"}
                     </ButtonContainer>
                   </div>
                 </div>

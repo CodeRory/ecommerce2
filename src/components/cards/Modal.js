@@ -3,6 +3,11 @@ import styled from "styled-components";
 import { ProductConsumer } from "../../context";
 import { ButtonContainer } from "./Button";
 import { Link } from "react-router-dom";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CloseIcon from '@material-ui/icons/Close';
+
+import '../cards/cards.css';
+
 
 export default class Modal extends Component {
   render() {
@@ -23,18 +28,18 @@ export default class Modal extends Component {
                       id="modal"
                       className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                     >
-                      <h5>item added to the cart</h5>
+                      <h5 style={{paddingTop: '27px'}}>Item added to the cart!</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
-                      <h5 className="text-muted">price: $ {price}</h5>
+                      <h5 className="text-muted">Price: $ {price}</h5>
                       <Link to="/">
-                        <ButtonContainer onClick={() => closeModal()}>
-                          store
+                        <ButtonContainer onClick={() => closeModal()} id='myButton' style={{border: 'none'}}>
+                         <CloseIcon />
                         </ButtonContainer>
                       </Link>
                       <Link to="/cart">
-                        <ButtonContainer cart onClick={() => closeModal()}>
-                          Go to cart
+                        <ButtonContainer cart onClick={() => closeModal()} id='myButton' style={{border: 'none'}}>
+                          <ShoppingCartIcon />
                         </ButtonContainer>
                       </Link>
                     </div>
