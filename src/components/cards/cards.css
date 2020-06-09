@@ -24,6 +24,24 @@
 }
 
 
+
+#titleOfProduct{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+#titleOfProduct:hover{
+    text-decoration: underline;
+}
+
+#productPrice {
+    color: rgb(39, 29, 29);
+    margin-top: 0;
+
+}
+
+
 @media (max-width: 950px) {
     .allCardsSection {
         grid-template-columns: 1fr 1fr 1fr ;
