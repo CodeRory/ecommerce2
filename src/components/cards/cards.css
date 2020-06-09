@@ -53,3 +53,15 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
+
+/* ----descriptionSection------------- */
+
+#descriptionContainer {
+    margin-left: 29%;
+    font-family: Oxygen;
+    width: 40%;
+    text-align: center;
+}
