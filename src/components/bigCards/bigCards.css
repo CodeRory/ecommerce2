@@ -1,0 +1,47 @@
+
+
+
+
+
+
+.twoBigCards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+#firstBigPic {
+    width: 37%;
+
+}
+
+#secondBigPic {
+    width: 37%;
+
+}
+
+
+.oneBigCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#theBigPic {
+    width: 83%;
+}
+
+
+
+
+
+
+
+
+
+

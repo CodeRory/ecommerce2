@@ -16,6 +16,8 @@ import Description from './components/description/description';
 
 import Footer from './components/footer/footer';
 
+import BigCards from './components/bigCards/bigCards';
+
 
 
 function App() {
@@ -40,6 +42,9 @@ function App() {
           <Route component={Default} />
         </Switch>
         <Modal />
+        <div>
+          <BigCards />
+        </div>
         <div>
           <Description />
         </div>
