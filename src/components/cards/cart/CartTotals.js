@@ -14,7 +14,7 @@ export default function CartTotals({ value }) {
                 type="button"
                 onClick={() => clearCart()}
               >
-                clear cart
+                Clear cart
               </button>
             </Link>
             <h5>
