@@ -115,6 +115,7 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+        font-size: 0.9rem;
         
     }
 
@@ -136,6 +137,7 @@
 
     .theBigPic {
         width: 90%;    
+        font-size: 0.9rem;
     }
 
     .textContainer{
