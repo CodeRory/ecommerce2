@@ -6,7 +6,7 @@ const Description = () => {
   return (
     <div className='allDescriptionArea'>  
         <div className='twoDescription'>    
-            <div body className='oneDescriptionOfTwo'>
+            <div body className='oneDescriptionOfTwo' id='firstOne'>
                 <h2 >
                     Music Ipsum
                 </h2>
@@ -20,7 +20,7 @@ const Description = () => {
                     </div>
                     
                 </div>
-                <div  className='oneDescriptionOfTwo'>
+                <div  className='oneDescriptionOfTwo' id='secondOne'>
                     <h2 >
                     Trust us
                     </h2>

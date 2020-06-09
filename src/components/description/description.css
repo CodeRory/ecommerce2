@@ -23,6 +23,7 @@
 
 .oneDescriptionOfTwo {
     width: 37%;
+    margin-right: 2%;
     
 }
 
@@ -36,4 +37,21 @@
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+@media (max-width: 700px) {
+    #firstOne {
+        display: none;
+    }
+
+    #secondOne {
+        width: 90%;
+        margin-bottom: 4%;
+    }
+
+    .oneVerticalDescription {
+        display: none;
+
+    }
+
 }
