@@ -1,3 +1,52 @@
+.cartBar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    
+}
+
+#storeBar {
+    display: flex;
+    align-self: end;
+    align-self: center;
+    font-family: Oxygen;
+    
+}
+
+#storeBarText {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#storeBarText:hover {
+    text-decoration: underline;
+}
+
+
+#cartBar {
+    display: flex;
+    align-self: center;
+    align-self: center;
+}
+
+#iconCart {
+    color: whitesmoke;    
+    border-radius: 40px;
+    height: 30px;
+    width: 40px;
+}
+
+#iconCart:hover {
+    background-color: gray;
+    border-radius: 40px;
+    height: 30px;
+    width: 40px;
+}
+
+
+
 .containerTitleAndCards {
     display: flex;
     flex-direction: column;
@@ -70,6 +119,29 @@
     color: #303030;
     text-transform: none;
     border-color: gray;
+    font-family: Oxygen;
+}
+
+#myButtonClear{
+    color: whitesmoke;
+    text-transform: none;
+    border-color: gray;
+    font-family: Oxygen;
+    border: none;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#myButtonClear:hover{
+    color: #303030;
+    text-transform: none;
+    border-color: gray;
+    font-family: Oxygen;
+    border: none;
+    font-weight: bolder;
+    background-color: gray;
+    cursor: pointer;
 }
 
 #myButton:hover {
@@ -83,4 +155,43 @@
 .container {
     font-family: Oxygen;
     text-align: center;
+}
+
+
+/* ------Cart------------- */
+
+#cartContainer {
+    font-family: Oxygen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#columns {
+    font-family: Oxygen;
+
+}
+
+#itemCart {
+    font-family: Oxygen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+#titleCart{
+    font-family: Oxygen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#finalCart {
+    border: solid;
+    width: 30%;
+    margin-left:35%;
+    margin-top: 5px;
+    border-radius: 3px;
 }

@@ -8,22 +8,21 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 export default class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
-        
-        
-        <ul className="navbar-nav align-items-center">
-          <li className="nav-item ml-5">
-            <Link to="/" className="nav-link">
-              Store
+      <NavWrapper className="cartBar">        
+          <div id="storeBar">
+            <Link to="/" id="storeBarText">
+              Our offers
             </Link>
-          </li>
-        </ul>
-        <Link to="/cart" className="ml-auto">
-          <ButtonContainer style={{border: 'none'}}>
-            
-            <ShoppingCartIcon style={{color: 'white'}}/>
-          </ButtonContainer>
-        </Link>
+          </div>  
+          <div id='cartBar'> 
+            <Link to="/cart" className="">
+              <ButtonContainer style={{border: 'none'}}>            
+                <ShoppingCartIcon id='iconCart' />
+              </ButtonContainer>
+            </Link>       
+          </div>
+        
+        
       </NavWrapper>
     );
   }

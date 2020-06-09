@@ -6,6 +6,8 @@ import { ProductConsumer } from '../../../context';
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
 
+import '../../cards/cards.css';
+
 export default class Cart extends Component {
   render() {
     return (
@@ -15,10 +17,10 @@ export default class Cart extends Component {
             const { cart } = value;
             if (cart.length > 0) {
               return (
-                <React.Fragment>
-                  <Title name="Your" title="cart" />
-                  <CartColumns />
-                  <CartList value={value} />
+                <React.Fragment >
+                  <Title name="Your" title="cart"  id='cartContainer' />
+                  
+                  <CartList value={value} style={{border: 'solid', borderColor: 'pink'}} />
                   <CartTotals value={value} />
                 </React.Fragment>
               );

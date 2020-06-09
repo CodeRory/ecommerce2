@@ -5,7 +5,7 @@ export default function CartItem({ item, value }) {
   const { increment, decrement, removeItem } = value;
 
   return (
-    <div className="row my-2 text-capitalize text-center">
+    <div id="itemCart">
       <div className="col-10 mx-auto col-lg-2">
         <img
           src={img}
@@ -15,10 +15,10 @@ export default function CartItem({ item, value }) {
         />
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">product : </span> {title}
+        <span className="d-lg-none">Product : </span> {title}
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">price : $ </span> {price}
+        <span className="d-lg-none">Price : $ </span> {price}
       </div>
       <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
         <div className="d-flex justify-content-center">

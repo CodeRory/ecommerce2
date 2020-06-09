@@ -5,7 +5,7 @@ export default function EmptyCart() {
     <div className="container mt-5">
       <div className="row">
         <div className="col-10 mx-auto text-center text-title">
-          <h1>Your cart is currently empty</h1>
+          <h2>Your shopping cart is empty, add an item to access to your shopping bag.</h2>
         </div>
       </div>
     </div>
