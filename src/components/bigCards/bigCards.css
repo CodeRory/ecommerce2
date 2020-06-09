@@ -1,7 +1,6 @@
-
-
-
-
+.sections {
+    font-family: Oxygen;
+}
 
 
 .twoBigCards {
@@ -19,10 +18,18 @@
 
 }
 
-#secondBigPic {
+one:nth-child(1) {
+    background-image: url('./city1.png');
+  }
+
+.secondBigPic {
     width: 37%;
 
 }
+
+.secondBigPic:nth-child(2) {
+    background-image: url('./city2.png');
+  }
 
 
 .oneBigCard {
@@ -37,11 +44,4 @@
 }
 
 
-
-
-
-
-
-
-
-
+ 
