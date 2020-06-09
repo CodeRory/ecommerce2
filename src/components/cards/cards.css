@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     width: 100%;
     font-family: Oxygen;
 }
@@ -11,6 +12,7 @@
 .allCardsSection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 7%;
     width: 90%;
 }
 
@@ -19,4 +21,17 @@
     height: 50%;
     width: 30%;
     display: flex;
+}
+
+
+@media (max-width: 950px) {
+    .allCardsSection {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media (max-width: 599px) {
+    .allCardsSection {
+        grid-template-columns: 1fr 1fr;
+    }
 }
