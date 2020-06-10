@@ -102,6 +102,13 @@
         grid-template-columns: 1fr 1fr;
         margin-left: 0;
         
+      
+    }
+
+    #descriptionContainer {
+        font-family: Oxygen;
+        width: 600px;
+        text-align: center;
     }
 }
 

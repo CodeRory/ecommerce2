@@ -20,7 +20,7 @@ export default class Details extends Component {
             inCart
           } = value.detailProduct;
           return (
-            <div className="container py-5" id='descriptionContainer'>
+            <div className="container py-5" id='descriptionContainer' style={{width: '100%', marginLeft: '0px'}}>
               {/* title */}
               <div className="row">
                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
