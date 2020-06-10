@@ -24,10 +24,13 @@ import '../secondNav/secondNav.css';
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: 'relative',
+    color: 'white',
+    backgroundColor: '#303030',
   },
   title: {
     marginLeft: theme.spacing(2),
     flex: 1,
+    fontFamily: 'Oxygen',
   },
 }));
 
@@ -59,11 +62,9 @@ function FullScreenDialog(props) {
               <CloseIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Sound
+              Instrument Area Template
             </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
-              save
-            </Button>
+            
           </Toolbar>
         </AppBar>
         <List>
