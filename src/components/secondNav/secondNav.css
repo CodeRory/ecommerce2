@@ -131,6 +131,16 @@ nav ul {
 }
 
 
+
+
+
+@media (max-width: 400px) {
+    .threeLittleSections{
+        margin-left: -27%;    
+      }
+       
+ }
+    
 #mySectionButton {
     border: none;
     text-transform: none;
