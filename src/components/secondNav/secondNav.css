@@ -50,7 +50,7 @@ nav ul {
 }
 .nav a {
     display: block;
-    padding: 0 16px;
+    padding: 0 2%;
     line-height: inherit;
     cursor: pointer;
 }
