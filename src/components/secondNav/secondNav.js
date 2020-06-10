@@ -63,19 +63,10 @@ function FullScreenDialog(props) {
             </IconButton>
             <Typography variant="h6" className={classes.title}>
               Instrument Area Template
-            </Typography>
-            
+            </Typography>            
           </Toolbar>
         </AppBar>
-        <List>
-          <ListItem button>
-            <ListItemText primary="Phone ringtone" secondary="Titania" />
-          </ListItem>
-          <Divider />
-          <ListItem button>
-            <ListItemText primary="Default notification ringtone" secondary="Tethys" />
-          </ListItem>
-        </List>
+        <h1 id='bigAreaDialogText'>This is an Instrument Area. Here you would find all the categories of the product. </h1>
       </Dialog>
     </div>
   );
@@ -110,19 +101,15 @@ function AlertDialogSlide(props) {
         aria-labelledby="alert-dialog-slide-title"
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle id="alert-dialog-slide-title">{"Use Google's location service?"}</DialogTitle>
+        <h3 id="littleDialogTitle">{"Instrument Section"}</h3>
         <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            Let Google help apps determine location. This means sending anonymous location data to
-            Google, even when no apps are running.
+          <DialogContentText id="alert-dialog-slide-description" style={{fontFamily: 'Oxygen'}}>
+            Here you would find a specific section of an instrument.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary">
-            Agree
+          <Button onClick={handleClose} color="gray" style={{textTransform: 'none'}}>
+            Ok
           </Button>
         </DialogActions>
       </Dialog>
@@ -260,7 +247,7 @@ class SubmenuDrums extends React.Component {
           <a><AlertDialogSlide title='Cymbals' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Sticks and Drumheads' /></a>
+          <a><AlertDialogSlide title='Sticks' /></a>
         </li>
         
       </ul>

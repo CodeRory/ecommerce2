@@ -147,3 +147,17 @@ nav ul {
     font-size: 1em;
 
 }
+
+#bigAreaDialogText{
+    font-family: Oxygen;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5rem;
+
+}
+
+#littleDialogTitle {
+    font-family: Oxygen;
+    text-align: center;
+
+}
