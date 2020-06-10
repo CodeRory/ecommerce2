@@ -112,7 +112,9 @@ class Carousel extends React.Component {
       width: elements.length * 100 + "%"
     };
 
+  
     return (
+      
       <div className="carousel-container">
         <div
           className="carousel-items"
@@ -121,7 +123,7 @@ class Carousel extends React.Component {
         >
           {React.Children.map(elements, (element, index) => {
             return (
-              <a href='/#' className="carousel-item" key={index}>
+              <a href='/#' onClick={() => alert('Here you will find the ad section of this slide')} className="carousel-item" key={index}>
                 {element}
               </a>
             );
