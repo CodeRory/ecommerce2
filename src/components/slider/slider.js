@@ -27,7 +27,7 @@ class Slider extends React.Component {
       <div className="main-container">
         <Carousel animationTime={500} slideInterval={10000}>
           {this.state.images.map((item, index) => {
-            return <img src={item} key={index} />;
+            return <img src={item} key={index} alt='/#'/>;
           })}
         </Carousel>
       </div>
@@ -121,12 +121,14 @@ class Carousel extends React.Component {
         >
           {React.Children.map(elements, (element, index) => {
             return (
-              <div className="carousel-item" key={index}>
+              <a href='/#' className="carousel-item" key={index}>
                 {element}
-              </div>
+              </a>
             );
           })}
         </div>
+
+        
         <div className="indicators">
           {this.props.children.map((child, index) => {
             let indicatorClass = "indicators-item";
