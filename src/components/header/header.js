@@ -8,10 +8,56 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import MenuSharpIcon from '@material-ui/icons/MenuSharp';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import CloseIcon from '@material-ui/icons/Close';
 
 import '../header/header.css';
 
 
+
+
+function AlertDialog(props) {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <div>
+      <Button id='navSections' style={{fontFamily: 'Oxygen'}} onClick={handleClickOpen}>
+        {props.title}
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+      <Button onClick={handleClose} color="primary" autoFocus id='buttonClose'>
+            <CloseIcon />
+          </Button>
+      
+        <h3 id='dialogTitle'>{props.header}</h3>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description" style={{fontFamily: 'Oxygen'}}>
+            This is a ecommerce web template. In this area, you would find another section of this website.
+          </DialogContentText>
+        </DialogContent>
+        
+      </Dialog>
+    </div>
+  );
+}
 
 
 
@@ -116,10 +162,10 @@ export default function SearchAppBar() {
               unmountOnExit
             >
               <nav className="Nav" style={{fontFamily: 'Oxygen', fontSize:'0.9em'}}>
-                <p id='navSections'>Menu</p>
-                <p id='navSections'>Services</p>
-                <p id='navSections'>Terms</p>
-                <p id='navSections'>Contact</p>
+                <p id='navSections'><AlertDialog title='Menu' header='Menu' /></p>
+                <p id='navSections'><AlertDialog title='Services' header='Services' /></p>
+                <p id='navSections'><AlertDialog title='Terms' header= 'Terms' /></p>
+                <p id='navSections'><AlertDialog title='Contact' header='Contact' /></p>
                 <p id='navSectionsClose' onClick={toggleNav}><ExpandLessIcon /></p>
                 
               </nav>
