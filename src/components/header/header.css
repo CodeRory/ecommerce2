@@ -1,21 +1,16 @@
-.leftHeader {
-    position: block;   
+.leftHeader {      
     height: 70px;
-    width: 25%;  
-    display: grid;
-    grid-template-areas: "nav logo"; /* se quitó el área del logo, antes era 'logo nav' */    
+    width: 25%; 
     background-color: #303030;
     z-index:2;
     margin-left: -1.8%;
     margin-right: 21%;
-    border: solid;
     
   }
    
   .Nav {
-    display: grid;
-    grid-area: nav;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    flex-direction: row;    
     align-items: center;
     justify-items: center;
     z-index: 4;    
@@ -41,9 +36,7 @@
   
   .Menu {
     display: none;
-    grid-area: Menu;
     padding: 0;
-    justify-self: end;
     font-size: 40px;
     border: none;
     background: none;
@@ -54,9 +47,9 @@
     transform: scale(1.2);
   }
 
-  #menuIcon:focus {
+  /* #menuIcon:focus {
     display: none;
-  }
+  } */
 
   
   
@@ -92,7 +85,7 @@
 
 @media (max-width: 850px) {
   .leftHeader {
-    display: fixed;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap; 
     height: 70px;
@@ -100,6 +93,7 @@
     margin-left: -1.8%;
     margin-right: 2%;
   }
+  
   .Nav {
     display: flex; 
     flex-direction: column;
@@ -107,12 +101,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-bottom-left-radius:20px;
     border-bottom-right-radius: 20px;
-    margin-top: 25px;
-    width: 130px;
+    margin-top: 60px;
+    width: 120px;
     z-index: 5;
-    margin-left: -11%;
+    margin-left: -5%;
+    margin-bottom: -220px; 
   }
     
+  
   #navSections {
     display: flex;
     transition: 0.5s;
@@ -121,21 +117,26 @@
     margin-top: 20px;
     padding-bottom: 10px;
     color: white;
+    
       
   }
 
   
   .Menu {
-    display: block;
+    display: block;/* 
+    flex-direction: row; */
     color: whitesmoke;
     width: 50px;
     height: 70px;
+    /* este es el que da problemas */
   }
-  #menuIcon {
-    display: fixed;
+
+ 
+  
+  
+ 
 
 
-  }
 
 
 
