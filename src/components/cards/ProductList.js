@@ -10,7 +10,7 @@ export default class ProductList extends Component {
     return (
       <React.Fragment>
         <div >
-          <div className="containerTitleAndCards" style={{border: 'solid'}}>
+          <div className="containerTitleAndCards" >
             <Title name="New offers" />
 
             <div className="allCardsSection"  >
