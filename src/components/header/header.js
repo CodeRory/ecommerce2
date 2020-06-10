@@ -63,19 +63,15 @@ function AlertDialog(props) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    /* flexGrow: 1, */
+    
   },
   
   title: {      
     flexGrow: 1,
     fontWeight: 'bolder',
-    /* display: 'none', */
     width: '200px',
     overflow: 'hidden',
     textOverflow: 'clip',
-    /* [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    }, */
   },
   search: {
     

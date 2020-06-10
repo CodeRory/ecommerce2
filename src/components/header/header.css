@@ -1,15 +1,14 @@
-
-
 .leftHeader {
-    position: flex;   
+    position: block;   
     height: 70px;
     width: 25%;  
     display: grid;
     grid-template-areas: "nav logo"; /* se quitó el área del logo, antes era 'logo nav' */    
     background-color: #303030;
-    z-index: 3;
+    z-index:2;
     margin-left: -1.8%;
     margin-right: 21%;
+    border: solid;
     
   }
    
@@ -55,6 +54,10 @@
     transform: scale(1.2);
   }
 
+  #menuIcon:focus {
+    display: none;
+  }
+
   
   
   
@@ -89,7 +92,7 @@
 
 @media (max-width: 850px) {
   .leftHeader {
-    display: flex;
+    display: fixed;
     flex-direction: column;
     flex-wrap: nowrap; 
     height: 70px;
@@ -129,6 +132,7 @@
     height: 70px;
   }
   #menuIcon {
+    display: fixed;
 
 
   }
