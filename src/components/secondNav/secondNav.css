@@ -23,11 +23,7 @@ html {
 *, *:before, *:after {
     box-sizing: border-box;
 }
-/* body {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-} */
+
 .menu-container {
     text-align: center;
 }
@@ -117,7 +113,7 @@ nav ul {
       align-items: center;
       justify-content: space-between;
       width: 90%;
-      margin-left: -10%;
+      margin-left: -27%;
         
         
 
