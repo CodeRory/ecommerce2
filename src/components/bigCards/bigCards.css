@@ -43,19 +43,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/* --------la card grande */
-
-
-
+/* --------big card */
 .oneBigCard {
     display: flex;
     flex-direction: row;

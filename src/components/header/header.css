@@ -46,15 +46,7 @@
   .Menu:active {
     transform: scale(1.2);
   }
-
-  /* #menuIcon:focus {
-    display: none;
-  } */
-
-  
-  
-  
-  
+ 
   .NavAnimation-enter {
     opacity: 0;
     transform: scale(0.5);
@@ -123,22 +115,13 @@
 
   
   .Menu {
-    display: block;/* 
-    flex-direction: row; */
+    display: block;
     color: whitesmoke;
     width: 50px;
     height: 70px;
-    /* este es el que da problemas */
   }
 
  
-  
-  
- 
-
-
-
-
 
   #searchRight {
     display: none; 

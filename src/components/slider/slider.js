@@ -5,8 +5,6 @@ import slider2 from '../slider/slider2.png';
 import slider3 from '../slider/slider3.png';
 import slider4 from '../slider/slider4.png';
 
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-
 import '../slider/slider.css';
 
 class Slider extends React.Component {

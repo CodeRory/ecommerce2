@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { ProductConsumer } from "../../context";
 import PropTypes from "prop-types";
 
-
-
 import '../cards/cards.css';
 
 

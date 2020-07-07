@@ -10,15 +10,12 @@
 }
 
 
-
 .twoDescription {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    
-    
-
+   
 }
 
 .oneDescriptionOfTwo {
@@ -26,8 +23,6 @@
     margin-right: 2%;
     
 }
-
-
 
 
 .oneVerticalDescription {

@@ -9,14 +9,15 @@
     
 }
 
-/* This is the extracted copied part responsible for showing & hiding the submenu. */
+
 .nav__submenu {
     display: none;
 }
 .nav__menu-item:hover .nav__submenu {
-    display: block;  /* El más importante, hace que salgan en columna los submenus y coge todo el width */
+    display: block;  
 }
-/* Layout styles. I like to work on stuff that's good looking so I remixed a cool simple menu by Mike Rojas (thanks!): https://codepen.io/mikerojas87/pen/rojKb */
+
+
 html {
     box-sizing: border-box;
 }
@@ -58,7 +59,7 @@ nav ul {
 .nav__menu-item {
     display: inline-block;
     overflow: clip;
-    /* position: relative; */
+    
 }
 .nav__menu-item:hover {
     background-color: rgba(255, 255, 255, 0.08);

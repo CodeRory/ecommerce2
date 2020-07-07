@@ -4,13 +4,8 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItem from '@material-ui/core/ListItem';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -127,43 +122,43 @@ class SecondNav extends React.Component {
           <nav className="nav">
             <ul className="nav__menu">
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Guitars' /></a>
+                <a href='#/'><FullScreenDialog title='Guitars' /></a>
                 <SubmenuGuitar />
               </li>
               
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Bass' /></a>
+                <a href='#/'><FullScreenDialog title='Bass' /></a>
                 <SubmenuBass />
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Piano' /></a>
+                <a href='#/'><FullScreenDialog title='Piano' /></a>
                 <SubmenuPiano />
               </li>
 
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Drums' /></a>
+                <a href='#/'><FullScreenDialog title='Drums' /></a>
                 <SubmenuDrums />
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='DJ' /></a>
+                <a href='#/'><FullScreenDialog title='DJ' /></a>
               </li>
 
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Brass' /></a>
+                <a href='#/'><FullScreenDialog title='Brass' /></a>
                 <SubmenuBrass />
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Studio' /></a>
+                <a href='#/'><FullScreenDialog title='Studio' /></a>
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Software' /></a>
+                <a href='#/'><FullScreenDialog title='Software' /></a>
                 <SubmenuSoftware />
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Accessories' /></a>
+                <a href='#/'><FullScreenDialog title='Accessories' /></a>
               </li>
               <li className="nav__menu-item">
-                <a><FullScreenDialog title='Cases' /></a>
+                <a href='#/'><FullScreenDialog title='Cases' /></a>
               </li>
             </ul>
           </nav>
@@ -200,13 +195,13 @@ class SubmenuGuitar extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Electric'  /></a>
+          <a href='#/'><AlertDialogSlide title='Electric'  /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Acoustic' /></a>
+          <a href='#/'><AlertDialogSlide title='Acoustic' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Classical' /></a>
+          <a href='#/'><AlertDialogSlide title='Classical' /></a>
         </li>
       </ul>
     )
@@ -222,10 +217,10 @@ class SubmenuBass extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Electric' /></a>
+          <a href='#/'><AlertDialogSlide title='Electric' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Acoustic' /></a>
+          <a href='#/'><AlertDialogSlide title='Acoustic' /></a>
         </li>
         
       </ul>
@@ -238,16 +233,16 @@ class SubmenuDrums extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Electric' /></a>
+          <a href='#/'><AlertDialogSlide title='Electric' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Acoustic' /></a>
+          <a href='#/'><AlertDialogSlide title='Acoustic' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Cymbals' /></a>
+          <a href='#/'><AlertDialogSlide title='Cymbals' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Sticks' /></a>
+          <a href='#/'><AlertDialogSlide title='Sticks' /></a>
         </li>
         
       </ul>
@@ -260,22 +255,22 @@ class SubmenuBrass extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Saxophones' /></a>
+          <a href='#/'><AlertDialogSlide title='Saxophones' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Trumpets' /></a>
+          <a href='#/'><AlertDialogSlide title='Trumpets' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Clarinets' /></a>
+          <a href='#/'><AlertDialogSlide title='Clarinets' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Trombones' /></a>
+          <a href='#/'><AlertDialogSlide title='Trombones' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Oboes' /></a>
+          <a href='#/'><AlertDialogSlide title='Oboes' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='More' /></a>
+          <a href='#/'><AlertDialogSlide title='More' /></a>
         </li>
         
       </ul>
@@ -288,13 +283,13 @@ class SubmenuPiano extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Grand Piano' /></a>
+          <a href='#/'><AlertDialogSlide title='Grand Piano' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Keyboard' /></a>
+          <a href='#/'><AlertDialogSlide title='Keyboard' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='MIDI' /></a>
+          <a href='#/'><AlertDialogSlide title='MIDI' /></a>
         </li>       
         
       </ul>
@@ -307,28 +302,19 @@ class SubmenuSoftware extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Windows' /></a>
+          <a href='#/'><AlertDialogSlide title='Windows' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Linux' /></a>
+          <a href='#/'><AlertDialogSlide title='Linux' /></a>
         </li>
         <li className="nav__submenu-item ">
-          <a><AlertDialogSlide title='Mac' /></a>
+          <a href='#/'><AlertDialogSlide title='Mac' /></a>
         </li>       
         
       </ul>
     )
   }
 }
-
-
-
-
-
-
-
-
-
 export default SecondNav;
 
 
