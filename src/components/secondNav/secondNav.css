@@ -1,3 +1,10 @@
+
+.bothSecondNav a{
+    text-decoration: none;
+
+}
+
+
 .secondNav {
     display: flex;
     justify-content: row;
